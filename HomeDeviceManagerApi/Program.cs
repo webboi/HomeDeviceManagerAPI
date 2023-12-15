@@ -17,7 +17,7 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection"))
 var app = builder.Build();
 app.UseCors(options =>
 {
-    options.WithOrigins("http://localhost:54364");
+    options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
 });
 
 // Configure the HTTP request pipeline.

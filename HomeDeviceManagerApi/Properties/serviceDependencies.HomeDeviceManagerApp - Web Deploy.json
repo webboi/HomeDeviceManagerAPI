@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/HomeDeviceManagerApiapi/apis/HomeDeviceManagerApi",
+      "type": "apis.azure"
+    },
+    "mssql2": {
+      "ignored": "true",
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:DefaultConnection"
+    },
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/HomeDeviceManagerApp/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsDdConnection_3CFAAB0550",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/sqlserver20245/databases/DeviceDetailDB",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:DdConnection"
+    }
+  }
+}
